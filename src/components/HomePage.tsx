@@ -15,6 +15,7 @@ type AppProps = {
 };
 
 const HomePage = ({ marketList }: AppProps) => {
+  console.log(marketList)
   return (
     <>
       <div className="homePageContainer">

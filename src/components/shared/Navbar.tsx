@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav>
       <h1>
-        <Link to="/">J & J - Crypto Town</Link>
+        <Link to="/">CryptoInfo</Link>
       </h1>
       <ul>
         <li>

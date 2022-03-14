@@ -5,14 +5,9 @@ export const NewsList = async (
 ) => {
   await axios
     .get(
-      "https://newsdata.io/api/1/news?apikey=pub_479bc1cc6ef7ef6c0fbd8d53bc45f0eaf42&q&category=sports,health",
-      {
-        headers: {
-          "Access-Control-Allow-Origin": "true",
-        },
-      }
+      "https://newsdata.io/api/1/news?apikey=pub_54474c7ef971ade318cb7cb7c4222a0bdc06&q=crypto&language=en",
     )
     .then((resp) => {
-      setData(resp.data);
+      setData(resp.data.results);
     });
 };
